@@ -53,7 +53,7 @@ Ans: [(the', 0.9998369216918945), (one', 0.9998359680175781), (to', 0.9998290538
 
 More to come in the upcoming posts....
 
-
+(from lazyprogrammer, https://github.com/lazyprogrammer/machinelearningexamples/blob/master/nlp_class2/word2vec.py)
 
 ```import json 
 import numpy as np 
@@ -334,17 +334,3 @@ _find_analogies(w1, w2, w3, We, word2idx)
 if name == 'main': 
 main() for concat in (True, False): print "** concat:", concat findanalogies('king', 'man', 'woman', concat=concat) findanalogies('france', 'paris', 'london', concat=concat) findanalogies('france', 'paris', 'rome', concat=concat) findanalogies('paris', 'france', 'italy', concat=concat)```
 
-
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
-
-Here's our logo (hover to see the title text):
-
-Inline-style: 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
-
-Reference-style: 
-![alt text][logo]
-
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
