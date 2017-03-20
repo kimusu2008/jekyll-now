@@ -1,9 +1,9 @@
 ---
 layout: post
-title: #Trained a word2vec (word embeddings model) model for Bahasa and Singlish !
+title: Trained a word2vec (word embeddings model) model for Bahasa and Singlish !
 ---
 
-In this post I’m going to show how the word2vec (word embeddings model) encapsulates and delivers the contextual information without using any prior knowledge. I first encountered word2vec back in 2013 and had written a white paper for finding word similarities using a different type of neural network (http://www.neuramatix.com/NeuraBASE%20for%20Finding%20Word%20Similarities.pdf).
+In this post I’m going to show how the word2vec (word embeddings model) encapsulates and delivers the contextual information without using any prior knowledge. I first encountered word2vec back in 2013 and had written a white paper for finding word similarities using a [different type of neural network](http://www.neuramatix.com/NeuraBASE%20for%20Finding%20Word%20Similarities.pdf).
 
 First, I get a pretrained Word2Vec model up and running in Python to play with. The python package called gensim is used for this experiment, it is a popular NLP package with good documentation and tutorials. Someone claims that it the word2vec package of gensim is 7x faster than a word2vec program built using numpy (see bottom for the word2vec script), I used a pretrained model which consists of word vectors for a vocabulary of 3 million words and phrases (trained on approximately 100 billion words from a Google News dataset). After loaded the model, I asked the following questions, it returns both semantically and syntactically similar words. The answers are ranked according to the consine distance (between 0 and 1, with 1 denotes the most similar)
 
