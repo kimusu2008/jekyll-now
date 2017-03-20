@@ -79,8 +79,8 @@ class Model(object):
 def init(self, D, V, contextsz): self.D = D # embedding dimension self.V = V # vocab size self.contextsz = context_sz
 
 def _get_pnw(self, X):
-    # calculate Pn(w) - probability distribution for negative sampling
-    # basically just the word probability ^ 3/4
+    calculate Pn(w) - probability distribution for negative sampling
+    basically just the word probability ^ 3/4
     word_freq = {}
     word_count = sum(len(x) for x in X)
     for x in X:
