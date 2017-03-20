@@ -55,7 +55,7 @@ More to come in the upcoming posts....
 
 
 
-`import json 
+```import json 
 import numpy as np 
 import theano 
 import theano.tensor as T 
@@ -332,7 +332,7 @@ else:
 
 _find_analogies(w1, w2, w3, We, word2idx)
 if name == 'main': 
-main() for concat in (True, False): print "** concat:", concat findanalogies('king', 'man', 'woman', concat=concat) findanalogies('france', 'paris', 'london', concat=concat) findanalogies('france', 'paris', 'rome', concat=concat) findanalogies('paris', 'france', 'italy', concat=concat)`
+main() for concat in (True, False): print "** concat:", concat findanalogies('king', 'man', 'woman', concat=concat) findanalogies('france', 'paris', 'london', concat=concat) findanalogies('france', 'paris', 'rome', concat=concat) findanalogies('paris', 'france', 'italy', concat=concat)```
 
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
