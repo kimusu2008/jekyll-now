@@ -3,7 +3,9 @@ layout: post
 title: Trained a word2vec (word embeddings model) model for Bahasa and Singlish !
 ---
 
-In this post I’m going to show how the word2vec (word embeddings model) encapsulates and delivers the contextual information without using any prior knowledge. I first encountered word2vec back in 2013 and had written a white paper for finding word similarities using a different type of neural network (http://www.neuramatix.com/NeuraBASE%20for%20Finding%20Word%20Similarities.pdf).
+You're up and running!
+Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+
 
 
 More to come in the upcoming posts....
