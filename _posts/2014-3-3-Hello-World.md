@@ -7,8 +7,8 @@ In this post I’m going to show how the word2vec (word embeddings model) encaps
 
 First, I get a pretrained Word2Vec model up and running in Python to play with. The python package called gensim is used for this experiment, it is a popular NLP package with good documentation and tutorials. Someone claims that it the word2vec package of gensim is 7x faster than a word2vec program built using numpy (see bottom for the word2vec script), I used a pretrained model which consists of word vectors for a vocabulary of 3 million words and phrases (trained on approximately 100 billion words from a Google News dataset). After loaded the model, I asked the following questions, it returns both semantically and syntactically similar words. The answers are ranked according to the consine distance (between 0 and 1, with 1 denotes the most similar)
 
-Q1. What are the most similar words to "malaysia" - 
-Ans: [(singapore', 0.6477215886116028), (australia', 0.6320846080780029), (uk', 0.6232705116271973), (canada', 0.621403694152832), (os', 0.6194831132888794), (south_africa', 0.6166156530380249), (ireland', 0.6131253242492676), (usa', 0.6127300262451172), (usb', 0.6124882102012634), (india', 0.6090297698974609)]
+###*Q1. What are the most similar words to "malaysia" - 
+Ans: [(singapore', 0.6477215886116028), (australia', 0.6320846080780029), (uk', 0.6232705116271973), (canada', 0.621403694152832), (os', 0.6194831132888794), (south_africa', 0.6166156530380249), (ireland', 0.6131253242492676), (usa', 0.6127300262451172), (usb', 0.6124882102012634), (india', 0.6090297698974609)]*
 
 Q2. What words are similar to "bank" - 
 Ans: [(banks', 0.7440758943557739), (banking', 0.690161406993866), (Bank', 0.6698698401451111), (lender', 0.6342284679412842), (banker', 0.6092954277992249), (depositors', 0.6031532287597656), (mortgage_lender', 0.579797625541687), (depositor', 0.5716427564620972), (BofA', 0.5714625120162964), (Citibank', 0.5589520931243896)]
