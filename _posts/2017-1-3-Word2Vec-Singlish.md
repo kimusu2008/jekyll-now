@@ -112,9 +112,9 @@ def _get_negative_samples(self, context, num_neg_samples):
     for j, pnwj in saved.iteritems():
         self.Pnw[j] = pnwj
     assert(np.all(self.Pnw[2:] > 0))
-    return neg_samples`
+    return neg_samples
 
-`def fit(self, X, num_neg_samples=10, learning_rate=10e-5, mu=0.99, reg=0.1, epochs=10):
+def fit(self, X, num_neg_samples=10, learning_rate=10e-5, mu=0.99, reg=0.1, epochs=10):
     N = len(X)
     V = self.V
     D = self.D
@@ -303,9 +303,9 @@ def fitt(self, X, num_neg_samples=10, learning_rate=10e-5, mu=0.99, reg=0.1, epo
 
     plt.plot(cost_per_epoch)
     plt.title("Theano cost at each epoch")
-    plt.show()`
+    plt.show()
 
-`def save(self, fn):
+def save(self, fn):
     arrays = [self.W1, self.W2]
     np.savez(fn, *arrays)
 def main(): 
