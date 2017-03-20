@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I am an experienced data science and machine learning practisioner.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+https://www.linkedin.com/in/brian-ho-34068a36/
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[KIMUSU2008@GMAIL.COM](mailto:KIMUSU2008@GMAIL.COM)
