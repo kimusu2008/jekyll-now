@@ -19,9 +19,18 @@ For this experiment, I used the model produced by Sung Kim (from HKUST) which us
 
 **What is RNN ?** - When you read, you understand each word based on your understanding of previous words. You don’t throw everything away and start thinking from scratch again. Your thoughts have persistence. Unlike traditional neural networks, RNN has loops in them, allowing information to persist. A recurrent neural network can be thought of as multiple copies of the same network, each passing a message to a successor. This chain-like nature reveals that recurrent neural networks are intimately related to sequences and lists. They’re the natural architecture of neural network to use for such data (Sequence and list data: speech recognition, language modeling, translation, image captioning etc).
 
-![_config.yml]({{ site.baseurl }}/images/LSTM3-SimpleRNN.png)
+![_config.yml]({{ site.baseurl }}/images/RNN-unrolled.png)
 [copied from here](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
 
 One of the appeals of RNNs is the idea that they might be able to connect previous information to the present task, such as using previous video frames might inform the understanding of the present frame. RNNs could do this but struggle with long term dependencies (longer gap). Consider a language model trying to predict the next word based on the previous ones. If we are trying to predict the last word in “the clouds are in the sky,” we don’t need any further context – it’s pretty obvious the next word is going to be sky. In such cases, where the gap between the relevant information and the place that it’s needed is small, RNNs can learn to use the past information. But there are also cases where we need more context. Consider trying to predict the last word in the text “I grew up in France… I speak fluent French.” Recent information suggests that the next word is probably the name of a language, but if we want to narrow down which language, we need the context of France, from further back. It’s entirely possible for the gap between the relevant information and the point where it is needed to become very large.
 
 **What is LSTM ?** - Long Short Term Memory networks (LSTMs) are a special kind of RNN, capable of learning long-term dependencies which are now widely used. LSTMs are explicitly designed to avoid the long-term dependency problem. Remembering information for long periods of time is practically their default behaviour. All recurrent neural networks have the form of a chain of repeating modules of neural network. In standard RNNs, this repeating module will have a very simple structure, such as a single tanh layer. The repeating module in a standard RNN contains a single layer. 
+
+![_config.yml]({{ site.baseurl }}/images/LSTM3-SimpleRNN.png)
+[copied from here](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+
+LSTMs also have this chain like structure, but the repeating module has a different structure. Instead of having a single neural network layer, there are four, interacting in a very special way. 
+
+![_config.yml]({{ site.baseurl }}/images/LSTM3-chain.png)
+
+[(Each line carries an entire vector, from the output of one node to the inputs of others. The pink circles represent pointwise operations, like vector addition, while the yellow boxes are learned neural network layers. Lines merging denote concatenation, while a line forking denote its content being copied and the copies going to different locations)]((http://colah.github.io/posts/2015-08-Understanding-LSTMs/))
