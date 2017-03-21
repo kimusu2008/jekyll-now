@@ -12,3 +12,19 @@ In this simple experiment, the word vectors have the size of ~6800 rows (vocab s
 It is hard to comprehend the grouping results hence I put them into lists as shown below where each circle denotes a grouping which encloses syntactically or semantically words.
 
 ![_config.yml]({{ site.baseurl }}/images/pic1.png)
+
+![_config.yml]({{ site.baseurl }}/images/pic2.png)
+
+
+Some groupings seem logical, for instance the group {"inspektor" "9" "15" "januari" "februari" "79" "17" "12" "19"}. Once can categorise this is a group consists of mostly numeric numbers or month numbers. The other example is {berpengetahuan" "pergigian" "pembelajaran" "graduan" "saintifik"} in which the words are related to education. Bear in mind the model was trained using a small text corpus, so I anticipate much improved results given a larger corpus.
+
+Alternatively, I tried the t-SNE dimension reduction package, the sample codes are shown below:
+
+![_config.yml]({{ site.baseurl }}/images/pic4-1.png)
+
+and clustering results:
+
+![_config.yml]({{ site.baseurl }}/images/pic5.png)
+
+Bear in mind that clustering quality and pca (parameter-free method) vs t-SNE (parameter) are not the points of discussion in this exercise.
+
