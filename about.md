@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I am an experienced data science and machine learning practisioner.
+I am an experienced data science and machine learning practitioner.
 
 ### More Information
 
