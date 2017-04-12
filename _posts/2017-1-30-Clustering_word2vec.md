@@ -5,7 +5,7 @@ title: Clustering of word2vec word vectors
 
 I used the word2vec tool and a small Bahasa text corpus (3MB) as input and produced the word vectors as output. It first constructs a vocabulary from the training text data and then learns vector representation of words. The resulting word vector file can be used as features in many natural language processing and machine learning applications.
 
-In this simple experiment, the word vectors have the size of ~6800 rows (vocab size) and 100 rows. Randomly sampled 500 rows (words) and used R's clusplot function (cluster package) for plotting the 2-dimensions cluster plot (the clustplot function has the dimensions reduction process built in and it uses the first two components for plotting). The plot looks like:
+In this simple experiment, the word vectors have the size of ~6800 rows (vocab size) and 100 columns. Randomly sampled 500 rows (words) and used R's clusplot function (cluster package) for plotting the 2-dimensions cluster plot (the clustplot function has the dimensions reduction process built in and it uses the first two components for plotting). The plot looks like:
 
 ![_config.yml]({{ site.baseurl }}/images/pic3.png)
 
