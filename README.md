@@ -1,1 +1,1 @@
-# kimusu2008.github.io
+Check out the blog at kimusu2008.github.io
